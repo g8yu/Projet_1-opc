@@ -2,105 +2,101 @@
     font-family: 'robotoregular';
     src: url('fonts/Roboto-Regular-webfont.eot');
     src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
-         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
-         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+        url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+        url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+        url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
- /*-------General-----*/
-section
-{
+
+/*-------General-----*/
+section {
     margin-bottom: 100px;
 }
 
-.fas
-{
+.fas {
     color: #5CADD3;
 }
 
 
 
-body
-{
+body {
     font-family: 'robotoregular';
-    margin:0;
-    
+    margin: 0;
+
+
 }
 
-.titre_service
-{
+.titre_service {
     font-size: 1.5em;
 }
 
-.wrapper
-{
+.wrapper {
     max-width: 900px;
     margin-right: auto;
-  margin-left:  auto;
-  padding-right: 10px;
-  padding-left:  10px;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.flex
-{
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     min-height: 80px;
-    
+
+
 }
 
 /*---------menu de navigation-------*/
 
 
-header
-{
-
+header {
+    position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
     position: sticky;
-    z-index: 4;
+    z-index: 10;
     top: 0;
     background-color: white;
-   
-    
-    
+
 }
 
 
-nav
-{
-    
+nav {
+
     font-family: 'robotoregular', arial, serif;
+    font-size: 1.2em;
+
 }
 
-header ul
-{
+header ul {
     display: flex;
     list-style-type: none;
 }
 
-header li a
-{
-   text-decoration: none;
+header li a {
+    text-decoration: none;
     text-align: center;
-    color: black;
+    color: grey;
     padding: 25px 15px 0px 15px;
-    
+
 }
 
-header li a:hover
-{
+header li a:hover {
     border-top: 3px #5CADD3 solid;
 }
 
+/*************************************************************fin du menu de navigation**********************************/
+/************************************************image bannière de la page*****************************************/
 /*--------image banniere--------*/
 
 
-#banniere button
-{
+#banniere button {
     padding: 10px 15px 10px 15px;
     color: #fff;
     background-color: #5CADD3;
@@ -109,493 +105,483 @@ header li a:hover
 }
 
 
-#image_fillette
-{
+#image_fillette {
     background-image: url(image/fillette.jpg);
     background-repeat: no-repeat;
     height: 400px;
     background-size: cover;
     background-position: center;
     
+
 }
 
-.bleu
-{
+.bleu {
     color: #5CADD3;
 }
 
-.titre_agency
-{
+.titre_agency {
     color: white;
     font-size: 2em;
-    padding-top: 70px;
-} 
+    padding-top: 20px;
+}
 
-.p_agency
-{
+#titre_principale {
+    position: absolute;
+    left: 80px;
+    text-align: left;
+    color: white;
+    font-size: 19px;
+    font-family: 'robotoregular', arial, serif;
+}
+
+#titre_principale p {
+    font-size: 16px;
+}
+
+.p_agency {
     color: white;
     font-size: 0.9em;
 }
+
+/*************************************************** fin de l'imange bannière***********************************/
+/************************************************* section service de la page**********************************/
 /*---------------------Service--------------*/
 
 
-#service
-{
-	
-	text-align: center;
-	font-family: 'robotoregular',arial, serif;
+#service {
+
+    text-align: center;
+    font-family: 'robotoregular', arial, serif;
 }
 
-#titre1
-{
-	padding-bottom: 35px;
-	position: relative;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#titre1 .fa-circle
-{
-	border: 1.5px solid white;
-	border-radius: 50%;
-	z-index: 2;
-	position: relative;
-}
-
-#titre1 hr
-{
-	width: 450px;
-	position: absolute;
-    
-     }
-
-#ecran_paragraphe
-{
-	display: flex;
-	margin-bottom: 100px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-#ecran img
-{
-    width: 400Px;
-}
-
-
-#paragraphe
-{
-	
-	padding-top: 60px;
-    padding-left: 30px;
-    width: 400px;
-}
-
-#paragraphe .fa-circle
-{
-	position:absolute;
-	top:28px;
-	left:66px;
-    bottom: 44px;
-	background-color:#fff;
-	border:2px solid white;
-	border-radius: 50%;
-	padding: 2px;
-    
-}
-
-#paragraphe .fas
-{
-	display: inline-block;
-}
-
-#uxdesign,#uidesign,#seo
-{
-	display: flex;
-}
-
-.fa-chart-line,.fa-cubes,.fa-chart-pie
-{
-	position:relative;
-	padding:30px;
-	border:1px solid #ebebeb;
-	border-radius:50%;
-    
-}
-
-.icone
-{
-	padding-top:40px;
-		
-}
-
-.text_icone
-{
-	padding-left: 20px;
-	text-align: left;
-}
-
-
-/*----------Nos projet------*/
-
-#projet
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-color: #f5f5f5;
-    overflow: hidden;
-}
-
-#titre2
-{
-    padding-bottom: 20px;
+#titre1 {
+    padding-bottom: 35px;
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#titre2 .fa-circle
-{
-    border: 1.5px white;
+#titre1 .fa-circle {
+    border: 5px solid white;
+    border-radius: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+#titre1 hr {
+    width: 11em;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ebebeb;
+    top: 75px;
+
+
+}
+
+#ecran_paragraphe {
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#ecran img {
+    width: 400Px;
+}
+
+
+#paragraphe {
+
+    padding-top: 60px;
+    padding-left: 30px;
+    width: 400px;
+}
+
+#paragraphe .fa-circle {
+    position: absolute;
+    top: 28px;
+    left: 66px;
+    bottom: 44px;
+    background-color: #fff;
+    border: 2px solid white;
     border-radius: 50%;
-    
+    padding: 2px;
+
 }
 
-#nav_folio ul
-{
-	display: flex;
-	/*width: 100%;*/
-	height: 34px;
-	padding:0;
-	background-color: #E5E5E5;
-	list-style-type: none;
-	border-radius: 5px;
+#paragraphe .fas {
+    display: inline-block;
 }
 
-#nav_folio li 
-{
-	display: flex;
-	flex-direction: column;
-	width: 100px;
-	text-align: center;
+#uxdesign,
+#uidesign,
+#seo {
+    display: flex;
 }
 
-#nav_folio li a
-{
-	text-decoration: none;
-	padding:8px 8px 8px 8px;
-	border-radius: 2px;
-	color: black;
+.fa-chart-line,
+.fa-cubes,
+.fa-chart-pie {
+    position: relative;
+    padding: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+
 }
 
-#nav_folio li a:hover
-{	
-	background-color:#5CADD3;
-	box-shadow:0px 3px 0px #438AAC;
-	color: #fff;
+.icone {
+    padding-top: 40px;
+
 }
 
-.fa-caret-down
-{
-	visibility: hidden;
+.text_icone {
+    padding-left: 20px;
+    text-align: left;
 }
 
-#nav_folio li:hover .fa-caret-down
-{
-	visibility: visible;
-	display: block;
-	color:#5CADD3;
-	margin-top: -3px;
+/******************************************** *****fin de la section service****************************************/
+/*********************************************** section projet de la page******************************************************/
+/*----------Nos projet------*/
+
+#projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    padding: 0px 0px 100px;
+    margin-bottom: auto;
 }
 
-#portfolio
-{
-	padding-top: 50px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: auto 1fr auto;
-	grid-auto-flow: row;
-	grid-row-gap: 25px;
-	grid-column-gap: 25px;
+#titre2 {
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-#portfolio i
-{
-	position: relative;
-	bottom: 115px;
-	left: 245px;
-	padding:10px;
-	border:2px solid white;
-	border-radius: 50%;
-	background-color: #4592B0;
-	color: white;
+#titre2 .fa-circle {
+    border: 5px solid white;
+    border-radius: 100%;
+    z-index: 2;
+    position: relative;
 }
 
-.eye_bloc h4
-{
-	padding: 0px 15px 0px 15px;
+#titre2 hr {
+    width: 11em;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ebebeb;
+    top: 75px;
 }
 
-.eye_bloc p
-{
-	padding: 0px 15px 0px 15px;
+/*--------------fin de l'entête de la section-------*/
+/*--------début du menu de navigation 'projet'-------*/
+
+#nav_folio ul {
+    display: flex;
+
+    height: 34px;
+    padding: 0;
+    background-color: #E5E5E5;
+    list-style-type: none;
+    border-radius: 5px;
 }
 
-.legende
-{
-	position: absolute;
-	display: block;
-	right: 0;
-	left: 0;
-	bottom:0px;
-	height: 100px;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #fff;
-	visibility: hidden;
+#nav_folio li {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    text-align: center;
 }
 
-figure
-{
-	position: relative;
-	display: inline-block;
-	margin:0;
-	overflow: hidden;
-	width: 300px;
-	height:200px;
+#nav_folio li a {
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    border-radius: 2px;
+    color: black;
 }
 
-figure img
-{
-	width: 100%;
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom:0;
-	left:0 ;
+#nav_folio li a:hover {
+    background-color: #5CADD3;
+    box-shadow: 0px 3px 0px #438AAC;
+    color: #fff;
 }
 
-figure:hover figcaption
-{
-	visibility: visible;
+.fa-caret-down {
+    visibility: hidden;
 }
+
+#nav_folio li:hover .fa-caret-down {
+    visibility: visible;
+    display: block;
+    color: #5CADD3;
+    margin-top: -3px;
+}
+
+/*----------fin du menu de la section-----------*/
+/*----------début de la grille d'illustration-------*/
+
+
+#portfolio {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-auto-flow: row;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+
+}
+
+#portfolio i {
+    position: relative;
+    bottom: 115px;
+    left: 235px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #4592B0;
+    color: white;
+}
+
+.eye_bloc h4 {
+    padding: 0px 15px 0px 15px;
+}
+
+.eye_bloc p {
+    padding: 0px 15px 0px 15px;
+}
+
+.legende {
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    bottom: 12px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    visibility: hidden;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    width: 280px;
+    height: 200px;
+}
+
+figure img {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+figure:hover figcaption {
+    visibility: visible;
+}
+
+/*------fin du portfolio------*/
+/********************************************** fin de la section projet************************************/
+/***************************************** formulaire de contact de la page**********************************/
 
 /*----------------------formulaire------------*/
 
 
 
-#map
-{
-	position: relative;
-	height: 600px;
-	font-family: 'robotoregular',arial, serif;
+#map {
+    position: relative;
+    height: 600px;
+    font-family: 'robotoregular', arial, serif;
 }
 
-iframe
-{
-	width: 100%;
-	height: 600px;
-	position: absolute;
-	z-index: 1;
-	border:0;
-    opacity: 0.6;
-    
+iframe {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    border: 0;
+    opacity: 0.7;
+
 }
 
-#filtre
-{
-	width: 100%;
-	height: 600px;
-	position: absolute;
-	z-index: 2;
-	background-color:rgba(152,199,240,0.35);
+#filtre {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(152, 199, 240, 0.35);
 }
 
-	
-form
-{
 
-	background-color:rgba(255,255,255,0.50);
-	width: 250px;
-	position: absolute;
-	top: 45px;
+form {
+
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 250px;
+    position: absolute;
+    top: 45px;
     right: 20px;
-	z-index: 3;
-	border-radius: 3px;
+    z-index: 3;
+    border-radius: 3px;
 }
 
-#contact_info
-{
-	padding-left: 23px;
-	padding-top: 7px;
-	line-height: 10px;
-} 
-
-form input
-{
-	width: 200px;
-	margin-bottom: 15px;	
-} 
-
-#bloc_form
-{
-	padding-left: 23px;
-	padding-bottom: 7px;
+#contact_info {
+    padding-left: 23px;
+    padding-top: 7px;
+    line-height: 10px;
 }
 
-textarea
-{
-	width: 198px;
-	height: 150px;
+form input {
+    width: 200px;
+    margin-bottom: 15px;
 }
 
-#sendmessage button
-{
-	border:none;
-	padding: 5px 10px 5px 10px;
-	border-radius: 2px;
-	background-color: #5CADD3;
-	box-shadow:0px 3px 0px #438AAC;
-	color: #fff;
+#bloc_form {
+    padding-left: 23px;
+    padding-bottom: 7px;
 }
 
-/*------------------------------------Responsive Tablette---------------------------*/
+textarea {
+    width: 198px;
+    height: 150px;
+}
 
-@media all and (max-width:905px)
-    
-{      /*IMAGE BANNIERE*/
-    
-    #titre_principale
-    {
-        position: absolute;
+#sendmessage button {
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+    background-color: #5CADD3;
+    box-shadow: 0px 3px 0px #438AAC;
+    color: #fff;
+}
+
+/**************************************************** fin du formulaire *********************************************/
+/********************************************* début des médias queries******************************************/
+/*----------------------------Responsive Tablette---------------------------*/
+
+@media all and (max-width:1024px) {
+    /*IMAGE BANNIERE*/
+
+    header {
+        padding: 0;
+    }
+
+    #titre_principale {
         top: 70px;
         left: 40px;
         font-size: 15px;
     }
-     
-    #titre_principale p
-    {
+
+    #titre_principale p {
         font-size: 12px;
     }
-    
-    #image_fillette
-    {
+
+    #image_fillette {
         height: 300px;
     }
- /*-----Nos projet----*/
-    
-    #portfolio
-    {
+
+    /*-----Nos projet----*/
+
+    #portfolio {
         grid-template-columns: repeat(2, 1fr);
-    } 
-    
+    }
+
     /*FORMULAIRE DE CONTACT*/
 
-	form
-	{
-		width: 250px;
-		margin-left: 74%;
-		margin-top: 15px;
-        
-	}
-    
+    form {
+        width: 250px;
+        margin-left: 74%;
+        margin-top: 15px;
+
+    }
+
+    #ecran_paragraphe {
+        justify-content: center;
+
+    }
 }
 
-    
-/*-------------SMARTPHONE RESPONSIVE-------------*/
-    
-    @media all and (max-width:600px)
-        
-    /*Barre de navigation*/
-    
+
+/*-------------SMARTPHONE RESPONSIVE 1 -------------*/
+
+@media all and (max-width:768px)
+/*Barre de navigation*/
+
     {
-     
-       header
-        {
-                    display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 115px;
-        }
-    
-    header ul
-    {
-        display: flex;
+    .flex {
+
         justify-content: center;
         
-    } 
-    
-    header li a 
-    {
+    }
+
+    header li a {
         padding: 25px 10px 0px 0px;
     }
-    
-    header li a:hover
-    {
+
+    header li a:hover {
         border-top: 2px #5CADD3 solid;
     }
-    
-    
-    .menu_nav
-    {
-        padding: inherit;
-    }
-    
-        nav
-        {
-        
-        }
-    #portfolio
-    {
-        grid-template-columns: repeat(1, 1fr);
-        padding-top: 50px;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        grid-auto-flow: row;
-        grid-row-gap: 25px;
-        grid-column-gap: 25px;
 
-    } 
-        #image_fillette
-        {
-            height: 200px;
-        }
-         #titre_principale
-    {
-        position: absolute;
-        top: 30px;
-        left: 5px;
-        font-size: 12px;
+    #nav_folio li {
+        width: 90px;
     }
-     
-    #titre_principale p
-    {
+
+
+    /*---------portfolio-------*/
+    #portfolio {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /*------bannière image et titre-----*/
+
+    #image_fillette {
+        height: 200px;
+    }
+
+    #titre_principale {
+
+        top: 100px;
+        left: 5px;
         font-size: 10px;
     }
-        /*FORMULAIRE DE CONTACT*/
 
-	form
-	{
-		position: absolute;
-		margin-left: 45px;
-		margin-top: 0px;
-	}
+    #titre_principale p {
+        font-size: 10px;
+    }
 
-	iframe
-	{
-		width:100%;
-		height: 600px;
-		position: absolute;
-		z-index: 1;
-		border:0;
-	}
-    
+
+
+    /*-----FORMULAIRE DE CONTACT----*/
+
+    form {
+
+        margin-right: 40px;
+        margin-top: 0px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 600px;
+        z-index: 1;
+        border: 0;
+    }
+
+    #filtre {
+        height: 100%;
+    }
+
+
 }
-    
-
-
