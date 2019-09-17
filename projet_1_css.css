@@ -23,18 +23,18 @@ section {
 
 
 body {
-    font-family: 'robotoregular';
+    font-family: 'robotoregular', arial, sans-serif;
     margin: 0;
 
 
 }
 
 .titre_service {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .wrapper {
-    max-width: 900px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 10px;
@@ -90,7 +90,9 @@ header li a {
 header li a:hover {
     border-top: 3px #5CADD3 solid;
 }
-
+ul{
+    padding: 0;
+}
 /*************************************************************fin du menu de navigation**********************************/
 /************************************************image bannière de la page*****************************************/
 /*--------image banniere--------*/
@@ -142,6 +144,26 @@ header li a:hover {
     color: white;
     font-size: 0.9em;
 }
+.fleche_droite{
+    position: absolute;
+    top: 250px;
+    right: -10px;
+    border-radius: 50px 0 0 50px;
+}
+.fleche_gauche{
+    position: absolute;
+    top: 250px;
+    border-radius: 0 50px 50px 0;
+    left: -10px
+
+}
+.fleche{
+    font-size: 40px;
+    color: aliceblue;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    
+}
 
 /*************************************************** fin de l'imange bannière***********************************/
 /************************************************* section service de la page**********************************/
@@ -152,6 +174,7 @@ header li a:hover {
 
     text-align: center;
     font-family: 'robotoregular', arial, serif;
+    
 }
 
 #titre1 {
@@ -163,11 +186,29 @@ header li a:hover {
     align-items: center;
 }
 
-#titre1 .fa-circle {
-    border: 5px solid white;
-    border-radius: 100%;
-    z-index: 2;
-    position: relative;
+.circle_01 
+{
+	 color: #6daccf;
+     position: relative;
+     border-radius:12px;
+}
+.circle_01::before
+{
+	 content:'';
+     position:absolute;
+     left:calc(-50% - 90pX);
+     top:calc(50% - 0px);
+     border-bottom:1px ridge #888;
+     width:90px;
+}
+.circle_01::after
+{
+	 content:'';
+     position:absolute;
+     left:calc(-50% - -30px);
+     top:calc(50% - 0px);
+     border-bottom:1px ridge #888;
+     width:90px;
 }
 
 #titre1 hr {
@@ -175,7 +216,7 @@ header li a:hover {
     position: absolute;
     z-index: 1;
     border: 1px solid #ebebeb;
-    top: 75px;
+    top: 85px;
 
 
 }
@@ -190,6 +231,9 @@ header li a:hover {
 
 #ecran img {
     width: 400Px;
+    padding-top: 50px;
+    
+    
 }
 
 
@@ -197,7 +241,7 @@ header li a:hover {
 
     padding-top: 60px;
     padding-left: 30px;
-    width: 400px;
+    width: 600px;
 }
 
 #paragraphe .fa-circle {
@@ -209,6 +253,7 @@ header li a:hover {
     border: 2px solid white;
     border-radius: 50%;
     padding: 2px;
+    font-size: initial;
 
 }
 
@@ -226,14 +271,16 @@ header li a:hover {
 .fa-cubes,
 .fa-chart-pie {
     position: relative;
-    padding: 30px;
+    padding: 24px;
     border: 1px solid #ebebeb;
     border-radius: 50%;
+    font-size: 30px;
 
 }
 
 .icone {
     padding-top: 40px;
+    
 
 }
 
@@ -257,6 +304,10 @@ header li a:hover {
     margin-bottom: auto;
 }
 
+.projet_titre{
+    font-size: 1.7em;
+}
+
 #titre2 {
     padding-bottom: 20px;
     text-align: center;
@@ -266,20 +317,31 @@ header li a:hover {
     position: relative;
 }
 
-#titre2 .fa-circle {
-    border: 5px solid white;
-    border-radius: 100%;
-    z-index: 2;
-    position: relative;
+.circle_02 
+{
+	 color: #6daccf;
+     position: relative;
+     border-radius:12px;
+}
+.circle_02::before
+{
+	 content:'';
+     position:absolute;
+     left:calc(-50% - 90px);
+     top:calc(50% - 0px);
+     border-bottom:1px ridge #888;
+     width:90px;
+}
+.circle_02::after
+{
+	 content:'';
+     position:absolute;
+     left:calc(-50% - -30px);
+     top:calc(50% - 0px);
+     border-bottom:1px ridge #888;
+     width:90px;
 }
 
-#titre2 hr {
-    width: 11em;
-    position: absolute;
-    z-index: 1;
-    border: 1px solid #ebebeb;
-    top: 75px;
-}
 
 /*--------------fin de l'entête de la section-------*/
 /*--------début du menu de navigation 'projet'-------*/
@@ -311,18 +373,21 @@ header li a:hover {
 #nav_folio li a:hover {
     background-color: #5CADD3;
     box-shadow: 0px 3px 0px #438AAC;
+    height: 17px; 
     color: #fff;
 }
 
 .fa-caret-down {
     visibility: hidden;
+
+    
 }
 
-#nav_folio li:hover .fa-caret-down {
+#nav_folio li a:hover .fa-caret-down {
     visibility: visible;
     display: block;
     color: #5CADD3;
-    margin-top: -3px;
+    margin-top: 0.5px;
 }
 
 /*----------fin du menu de la section-----------*/
@@ -426,6 +491,7 @@ iframe {
 }
 
 
+
 form {
 
     background-color: rgba(255, 255, 255, 0.50);
@@ -458,14 +524,22 @@ textarea {
     height: 150px;
 }
 
-#sendmessage button {
-    border: none;
-    padding: 5px 10px 5px 10px;
-    border-radius: 2px;
-    background-color: #5CADD3;
-    box-shadow: 0px 3px 0px #438AAC;
-    color: #fff;
+
 }
+/* Bouton submit */
+input[type="submit"] {
+	padding: 0.5em 1em;
+	border-radius: 3px;
+	border: 1px solid #e5e5e5;
+}
+
+input[type="submit"]:hover {
+	background: #0088b5;
+	border-bottom: 3px solid #01627f;
+	color: #fff;
+}
+
+
 
 /**************************************************** fin du formulaire *********************************************/
 /********************************************* début des médias queries******************************************/
@@ -511,6 +585,15 @@ textarea {
         justify-content: center;
 
     }
+        .fleche_droite{
+    display: none;
+}
+        .fleche_gauche{
+    display: none;
+    
+        }
+    
+    
 }
 
 
@@ -554,23 +637,30 @@ textarea {
     #titre_principale {
 
         top: 100px;
-        left: 5px;
+        left: 15px;
         font-size: 10px;
     }
 
     #titre_principale p {
         font-size: 10px;
     }
+        .fleche_droite{
+    display: none;
+}
+        .fleche_gauche{
+    display: none;
+    
+        }
+        
+ }
 
 
 
     /*-----FORMULAIRE DE CONTACT----*/
 
-    form {
 
-        margin-right: 40px;
-        margin-top: 0px;
-    }
+    
+
 
     iframe {
         width: 100%;
@@ -584,4 +674,43 @@ textarea {
     }
 
 
+
+
+/************************************ RESPONSIVE SMARTPHONE 2 ************************************/
+
+@media all and (max-width: 425px){
+    
+    
+    #titre_principale{
+        top: 100px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

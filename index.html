@@ -54,6 +54,8 @@
 
 
             <div id="image_fillette">
+                <i class="fleche fleche_gauche fas fa-angle-left"></i>
+                
                 <div id="titre_principale" class="wrapper">
 
                     <h1 class="titre_agency"><span class="bleu">Webagency</span>: L'agence de tous<br> vos projets !<br></h1>
@@ -61,7 +63,9 @@
                     <p class="p_agency">Vous avez un projet web? La WebAgency vous aide à les réaliser !</p>
 
                     <button>Plus d'Infos</button>
+                    
                 </div>
+                <i class="fleche fleche_droite fas fa-angle-right"></i>
             </div>
 
 
@@ -77,9 +81,7 @@
             <div id="titre1">
 
                 <h2 class="titre_service">NOS SERVICES</h2>
-                <hr>
-                
-                <i class="fas fa-circle"></i>
+                <span class="circle_01"><i class="fas fa-circle" aria-hidden="true"></i></span>
 
 
                 <p>Spécialisé en création de sites internet et stratégie digitale,
@@ -97,7 +99,7 @@
                 <div id="paragraphe">
                     <div id="uxdesign">
                         <div class="icone">
-                            <i class="fas fa-chart-line">
+                            <i class="icone_projet fas fa-chart-line">
                                 <i class="fas fa-circle"></i></i>
                         </div>
 
@@ -109,7 +111,7 @@
 
                     <div id="uidesign">
                         <div class="icone">
-                            <i class="fas fa-cubes">
+                            <i class="icone_projet fas fa-cubes">
                                 <i class="fas fa-circle"></i></i>
                         </div>
 
@@ -126,7 +128,7 @@
 
                     <div id="seo">
                         <div class="icone">
-                            <i class="fas fa-chart-pie">
+                            <i class="icone_projet fas fa-chart-pie">
                                 <i class="fas fa-circle"></i></i>
                         </div>
 
@@ -151,16 +153,15 @@
     <section id="projet">
 
         <div id="titre2">
-            <h2>NOS PROJETS</h2>
-            <hr>
-            <i class="fas fa-circle"></i>
+            <h2 class="projet_titre">NOS PROJETS</h2>
+            <span class="circle_02"><i class="fas fa-circle" aria-hidden="true"></i></span>
             <p>
                 En plus de 9 ans d’expérience, notre agence a réalisé de très nombreux projets dans de multiples domaines.<br> Découvrez toutes nos références en détails.</p>
         </div>
 
         <div id="nav_folio">
             <ul>
-                <li><a href="">All works</a><i class="fas fa-caret-down"></i></li>
+                <li><a href="">All works<i class="fas fa-caret-down"></i></a></li>
                 <li><a href="">Creative</a><i class="fas fa-caret-down"></i></li>
                 <li><a href="">Corporate</a><i class="fas fa-caret-down"></i></li>
                 <li><a href="">Portfolio</a><i class="fas fa-caret-down"></i></li>
@@ -268,6 +269,8 @@
         <div id="filtre"></div>
 
 
+      
+			
         <form>
 
 
@@ -281,15 +284,19 @@
 
 
             <div id="bloc_form">
-                <input type="text" placeholder="Name" required="required" /><br>
-                <input type="text" placeholder="Email" /><br>
-                <input type="text" placeholder="Subject" /><br>
+               
+                <label for="nom"></label><input type="text" placeholder="Name" required="required" /><br>
+                
+                <label for="email"></label><input type="text" placeholder="Email" /><br>
+                
+                <label for="subject"></label><input type="text" placeholder="Subject" /><br>
 
-                <textarea name="message" placeholder="Message"></textarea>
+                <textarea name="commentaire" id="commentaire" rows="10" cols="35" placeholder="Message..."></textarea>
 
 
                 <div id="sendmessage">
-                    <button>Send Message</button>
+                   
+                    <input type="submit" value="Envoyer">
                 </div>
             </div>
         </form>
